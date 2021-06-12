@@ -1,1 +1,10 @@
 /* The page CSS will come here */
+.button1 {
+    background-color: hsl(246, 32%, 51%);
+    color: black;
+}
+
+.button1:hover {
+    background-color: #2c2f7f;
+    color: white;
+}
