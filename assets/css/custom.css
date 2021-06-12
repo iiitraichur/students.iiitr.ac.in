@@ -1,0 +1,16 @@
+/* ========== Footer CSS ============= */
+.site-footer {
+  text-align: center;
+}
+
+.footer-logo {
+  width: 50%;
+  margin: 0% 25% 0% 25%;
+}
+
+.site-footer a,
+h3,
+h5 {
+  color: white;
+  padding: 10px;
+}
