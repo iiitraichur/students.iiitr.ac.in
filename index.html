@@ -222,25 +222,23 @@ layout: default
 	</div>
 </section>
 
-<section>
-	<div class="container-fluid">
-		<!-- Set up your HTML -->
-		<div class="owl-carousel">
-			<div>
-				<img src="./assets/images/students/gymkhana-cover.jpg">
+<section class="slider" style="width: 90%;margin: 5%;" data-stellar-background-ratio="0.5">
+	<div class="row">
+
+		<div class="owl-carousel owl-theme">
+			<div class="item item-first">
 			</div>
-			<div>
-				<img src="./assets/images/students/slider_1.jpg">
+			<div class="item item-second">
 			</div>
-			<div>
-				<img src="./assets/images/students/slider_2.jpg">
+			<div class="item item-third">
 			</div>
-			<div>
-				<img src="./assets/images/students/slider_3.jpg">
+			<div class="item item-forth">
 			</div>
 		</div>
+
 	</div>
 </section>
+
 
 <!-- SCHEDULE -->
 <!-- <section class="schedule section" id="schedule">
@@ -354,7 +352,7 @@ layout: default
 
 
 <!-- CONTACT -->
-<section class="contact section" id="contact">
+<!-- <section class="contact section" id="contact">
 	<div class="container">
 		<div class="row">
 
@@ -379,12 +377,6 @@ layout: default
 
 				<p data-aos="fade-up" data-aos-delay="800"><i class="fa fa-map-marker mr-1"></i> 120-240 Rio de
 					Janeiro - State of Rio de Janeiro, Brazil</p>
-				<!-- How to change your own map point
-	1. Go to Google Maps
-	2. Click on your location point
-	3. Click "Share" and choose "Embed map" tab
-	4. Copy only URL and paste it within the src="" field below
--->
 				<div class="google-map" data-aos="fade-up" data-aos-delay="900">
 					<iframe
 						src="https://maps.google.com/maps?q=Av.+Lúcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed"
@@ -394,7 +386,7 @@ layout: default
 
 		</div>
 	</div>
-</section>
+</section> -->
 
 
 <!-- Modal -->
@@ -405,7 +397,7 @@ layout: default
 		<div class="modal-content">
 			<div class="modal-header">
 
-				<h2 class="modal-title" id="membershipFormLabel">Membership Form</h2>
+				<h2 class="modal-title" id="membershipFormLabel">Contact Form</h2>
 
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
@@ -414,15 +406,15 @@ layout: default
 
 			<div class="modal-body">
 				<form class="membership-form webform" role="form">
-					<input type="text" class="form-control" name="cf-name" placeholder="John Doe">
+					<input type="text" class="form-control" name="cf-name" placeholder="Name">
 
-					<input type="email" class="form-control" name="cf-email" placeholder="Johndoe@gmail.com">
+					<input type="email" class="form-control" name="cf-email" placeholder="Email">
 
-					<input type="tel" class="form-control" name="cf-phone" placeholder="123-456-7890"
+					<input type="tel" class="form-control" name="cf-phone" placeholder="Phone Number"
 						pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
 
 					<textarea class="form-control" rows="3" name="cf-message"
-						placeholder="Additional Message"></textarea>
+						placeholder="Message"></textarea>
 
 					<button type="submit" class="form-control" id="submit-button" name="submit">Submit
 						Button</button>
