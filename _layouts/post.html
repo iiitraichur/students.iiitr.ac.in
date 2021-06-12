@@ -1,0 +1,109 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title> {{page.title}} | Students IIITR</title>
+    <meta content="" name="descriptison">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="{{ site.baseurl }}assets/images/logo/iiitr.png" rel="icon">
+    <link href="{{ site.baseurl }}assets/images/logo/iiitr.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i,900,900i"
+        rel="stylesheet">
+
+    <!-- Font awesome -->
+    <script src="https://use.fontawesome.com/e93a6decc6.js"></script>
+
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/aos.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/custom.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Main CSS File -->
+    <link href="{{ site.baseurl }}assets/css/{{page.title}}.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}assets/css/default.css" rel="stylesheet">
+
+</head>
+
+<body>
+    {% include navbar.html %}
+
+    <section class="section text-center" style="padding-top:100px">
+        <div class="container">
+            <style>
+                .updates-page-image img {
+                    width: 80%;
+                    margin: 10%;
+                }
+            </style>
+            <div class="row updates-page-image">
+
+                <div class="col-lg-12">
+                    <h2>{{ page.title }}</h2>
+                    <p> {{ page.content}}</p>
+                </div>
+
+                <div class="col-lg-6">
+                    <img src="{{ site.baseurl }}/assets/images/updates/{{ page.img_1 }}">
+                </div>
+                {% if page.img_2 != NULL %}
+                <div class="col-lg-6">
+                    <img src="{{ site.baseurl }}/assets/images/updates/{{ page.img_2 }}">
+                </div>
+                {% endif %}
+                {% if page.img_3 != NULL %}
+                <div class="col-lg-6">
+                    <img src="{{ site.baseurl }}/assets/images/updates/{{ page.img_3 }}">
+                </div>
+                {% endif %}
+                {% if page.img_4 != NULL %}
+                <div class="col-lg-6">
+                    <img src="{{ site.baseurl }}/assets/images/updates/{{ page.img_4 }}">
+                </div>
+                {% endif %}
+                {% if page.img_5 != NULL %}
+                <div class="col-lg-6">
+                    <img src="{{ site.baseurl }}/assets/images/updates/{{ page.img_5 }}">
+                </div>
+                {% endif %}
+                {% if page.img_6 != NULL %}
+                <div class="col-lg-6">
+                    <img src="{{ site.baseurl }}/assets/images/updates/{{ page.img_6 }}">
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </section>
+
+    {% include footer.html %}
+
+    <!-- Vendor JS Files -->
+
+    <!-- SCRIPTS -->
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/aos.js"></script>
+    <script src="/assets/js/smoothscroll.js"></script>
+    <script src="/assets/js/custom.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- Template Main JS File -->
+    <script src="{{ site.baseurl }}assets/js/main.js"></script>
+</body>
+
+</html>
