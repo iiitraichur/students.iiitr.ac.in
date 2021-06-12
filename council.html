@@ -4,96 +4,216 @@ layout: default
 ---
 
 <style>
-    .clubTitle {
-        text-align: center;
-        padding: 10px;
-    }
+	.clubTitle {
+		text-align: center;
+		padding: 10px;
+	}
 
-    .clubCards {
-        text-align: center;
-        background: rgba(189, 16, 224, 0.65);
-        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-        backdrop-filter: blur(9.0px);
-        -webkit-backdrop-filter: blur(9.0px);
-        border-radius: 20px;
-        border: 1px solid rgba(255, 255, 255, 0.18);
-        padding: 15px;
-        margin: 15px;
-    }
+	/* .clubCards {
+		text-align: center;
+		background: rgba(189, 16, 224, 0.65);
+		box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+		backdrop-filter: blur(9.0px);
+		-webkit-backdrop-filter: blur(9.0px);
+		border-radius: 20px;
+		border: 1px solid rgba(255, 255, 255, 0.18);
+		padding: 15px;
+		margin: 15px;
+	} */
+
+	.club-section {
+		background-color: #1D1D27;
+		padding-top: 100px;
+	}
+
+	.club-info {
+		color: black;
+	}
+
+	.club-name {
+		padding-left: 7%;
+		padding-bottom: 2%;
+	}
+
+	.club-card {
+		width: 70%;
+		margin: 15%;
+		background-color: white;
+		box-shadow: 5px 8px 32px 20px rgba(31, 38, 135, 0.37);
+	}
+
+	.club-heading {
+		color: white;
+		text-align: center;
+	}
+
+	.icon-social {
+		margin-top: 30%;
+		text-align: center;
+	}
+
+	.button1 {
+		background-color: hsl(246, 32%, 51%);
+		color: black;
+	}
+
+	.button1:hover {
+		background-color: #2c2f7f;
+		color: white;
+	}
+
+	@media only screen and (min-width: 600px) {
+		.club-card img {
+			height: 400px;
+		}
+	}
+
+	@media only screen and (max-width: 600px) {}
 </style>
 
-<!-- Club section -->
-<section>
+<section class="club-section">
+	<div class="container">
+		<div class="club-heading">
+			<h1>Clubs</h1>
+		</div>
 
-    <div class="container">
-        <div class="col-lg-12 clubTitle">
-            <h2>Clubs</h2>
-        </div>
-    </div>
-
-    <div class="row col-lg-12">
-
-        <div class="col-lg-4">
-            <div class="clubCards">
-                <h2>Xposure</h2>
-                <p>This is test</p>
-            </div>
-        </div>
-
-        <div class="col-lg-4">
-            <div class="clubCards">
-                <h2>Xposure</h2>
-                <p>This is test</p>
-            </div>
-        </div>
-
-        <div class="col-lg-4">
-            <div class="clubCards">
-                <h2>Xposure</h2>
-                <p>This is test</p>
-            </div>
-        </div>
-
-        <div class="col-lg-4">
-            <div class="clubCards">
-                <h2>Xposure</h2>
-                <p>This is test</p>
-            </div>
-        </div>
-
-        <div class="col-lg-4">
-            <div class="clubCards">
-                <h2>Xposure</h2>
-                <p>This is test</p>
-            </div>
-        </div>
-
-        <div class="col-lg-4">
-            <div class="clubCards">
-                <h2>Xposure</h2>
-                <p>This is test</p>
-            </div>
-        </div>
-
-    </div>
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="club-card">
+					<img src="assets/images/logo/club/codesoc.jpeg" class="img-fluid" alt="codesoc">
+					<div class="row">
+						<div class="col-9 club-name">
+							<h2>Codesoc</h2>
+							<h4>The Coding Club</h4>
+						</div>
+						<div class="col-3">
+							<h4>
+								<div class="row icon-social">
+									<div class="col-12">
+										<a href="#" class="fa fa-instagram"></a>
+									</div>
+									<div class="col-12 mt-2">
+										<a href="#" class="fa fa-envelope"></a>
+									</div>
+								</div>
+							</h4>
+						</div>
 
 
-    <!-- <div class="container">
-        <div class="row">
-            <div style="background-color: brown;" class="col-lg-4">
-                <h2>This is test</h2>
-            </div>
-            <div style="background-color: blue;" class="col-lg-4">
-                <h2>This is test</h2>
-            </div>
+					</div>
+					<div class="col-12" style="text-align: center; padding-bottom: 15px;">
+						<h4>
+							<a href="#"><button class="btn button1">More
+									info</button></a>
+						</h4>
+					</div>
+				</div>
 
-            <div style="background-color: black;" class="col-lg-4">
-                <h2>This is test</h2>
-            </div>
-        </div>
-    </div> -->
-    <!-- <div style="background-color: blue" class="container-fluid">
-        <h2>This is test</h2>
-    </div> -->
+			</div>
 
+			<div class="col-lg-6">
+				<div class="club-card">
+					<img src="assets/images/logo/club/electrogeeks.jpeg" class="img-fluid" alt="electrogeeks">
+					<div class="row">
+						<div class="col-9 club-name">
+							<h2>Electrogeeks</h2>
+							<h4>Robotics Club</h4>
+						</div>
+						<div class="col-3">
+							<h4>
+								<div class="row icon-social">
+									<div class="col-12">
+										<a href="#" class="fa fa-instagram"></a>
+									</div>
+									<div class="col-12 mt-2">
+										<a href="#" class="fa fa-envelope"></a>
+									</div>
+								</div>
+							</h4>
+						</div>
+
+
+					</div>
+					<div class="col-12" style="text-align: center; padding-bottom: 15px;">
+						<h4>
+							<a href="#"><button class="btn button1">More
+									info</button></a>
+						</h4>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="club-card">
+					<img src="assets/images/logo/club/finesse.jpeg" class="img-fluid" alt="finesse">
+					<div class="row">
+						<div class="col-9 club-name">
+							<h2>Finesse</h2>
+							<h4>The Cultural Club</h4>
+						</div>
+						<div class="col-3">
+							<h4>
+								<div class="row icon-social">
+									<div class="col-12">
+										<a href="#" class="fa fa-instagram"></a>
+									</div>
+									<div class="col-12 mt-2">
+										<a href="#" class="fa fa-envelope"></a>
+									</div>
+								</div>
+							</h4>
+						</div>
+
+
+					</div>
+					<div class="col-12" style="text-align: center; padding-bottom: 15px;">
+						<h4>
+							<a href="#"><button class="btn button1">More
+									info</button></a>
+						</h4>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="col-lg-6">
+				<div class="club-card">
+					<img src="assets/images/logo/club/xposure.jpeg" class="img-fluid" alt="xposure">
+					<div class="row">
+						<div class="col-9 club-name">
+							<h2>Xposure</h2>
+							<h4>Photography Club</h4>
+						</div>
+						<div class="col-3">
+							<h4>
+								<div class="row icon-social">
+									<div class="col-12">
+										<a href="#" class="fa fa-instagram"></a>
+									</div>
+									<div class="col-12 mt-2">
+										<a href="#" class="fa fa-envelope"></a>
+									</div>
+								</div>
+							</h4>
+						</div>
+
+
+					</div>
+					<div class="col-12" style="text-align: center; padding-bottom: 15px;">
+						<h4>
+							<a href="#"><button class="btn button1">More
+									info</button></a>
+						</h4>
+					</div>
+				</div>
+
+			</div>
+
+		</div>		
+		
+	</div>
 </section>
