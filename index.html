@@ -222,116 +222,38 @@ layout: default
 
 			{% assign council = site.categories['council'] %}
 			{% for post in council %}
-
-			<div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400">
+			<div class="col-lg-4 col-12">
+				<div class="council-cards">
+					<img src="./assets/images/council/{{ post.image }}">
+					<div class="council-cards-content text-center">
+						<h4 style="font-weight: 500;">
+							{{post.name}}<br>
+							{{post.designation}}
+						</h4>
+						<a href="{{post.linkedin}}" target="_blank"
+							class="fa fa-linkedin  council-cards-link">&nbsp;</a>
+						<a href="tel://{{post.number}}" target="_blank"
+							class="fa fa-phone  council-cards-link">&nbsp;</a>
+						<a href="mailto:{{post.email}}" target="_blank"
+							class="fa fa-envelope  council-cards-link">&nbsp;</a><br>
+						<a href="{{ post.url | absolute_url }}"><button class="btn button1">More</button></a>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400">
 				<div class="class-thumb update-cards">
 					<img src="/assets/images/updates/{{ post.img_1 }}" class="img-fluid" alt="Class">
 
 					<div class="class-info">
 						<h3 style="color:black">{{ post.title }}</h3>
 						<h5 style="color: rgb(0, 0, 0);">{{ post.date | date: "%d %b %Y" }}</h5>
-						<!-- <p>{{ post.content }}</p> -->
+						<!-- <p>{{ post.content }}</p> 
 						<a href="{{ post.url | absolute_url }}"><button class="btn button1">More</button></a>
 					</div>
 				</div>
-			</div>
+			</div> -->
 
 			{% endfor %}
-			<div class="col-lg-4 col-12">
-				<div class="council-cards">
-					<img src="./assets/images/council/gensec_1.jpeg">
-					<div class="council-cards-content text-center">
-						<h4 style="font-weight: 500;">
-							Vibhanshu Jain<br>
-							General Secretary 1
-						</h4>
-						<a href="https://www.youtube.com/channel/UC6aCBD8hLAJzg7V50CEcX3g" target="_blank"
-							class="fa fa-youtube  council-cards-link">&nbsp;</a><a
-							href="https://www.youtube.com/channel/UC6aCBD8hLAJzg7V50CEcX3g" target="_blank"
-							class="fa fa-youtube  council-cards-link">&nbsp;</a><a
-							href="https://www.youtube.com/channel/UC6aCBD8hLAJzg7V50CEcX3g" target="_blank"
-							class="fa fa-youtube  council-cards-link">&nbsp;</a><a
-							href="https://www.youtube.com/channel/UC6aCBD8hLAJzg7V50CEcX3g" target="_blank"
-							class="fa fa-youtube  council-cards-link">&nbsp;</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-12">
-				<div class="council-cards">
-					<img src="./assets/images/council/gensec_1.jpeg">
-					<div class="council-cards-content text-center">
-						<h4 style="font-weight: 500;">
-							Vibhanshu Jain<br>
-							General Secretary 1
-						</h4>
-						<a href="https://www.youtube.com/channel/UC6aCBD8hLAJzg7V50CEcX3g" target="_blank"
-							class="fa fa-youtube  council-cards-link">&nbsp;</a><a
-							href="https://www.youtube.com/channel/UC6aCBD8hLAJzg7V50CEcX3g" target="_blank"
-							class="fa fa-youtube  council-cards-link">&nbsp;</a><a
-							href="https://www.youtube.com/channel/UC6aCBD8hLAJzg7V50CEcX3g" target="_blank"
-							class="fa fa-youtube  council-cards-link">&nbsp;</a><a
-							href="https://www.youtube.com/channel/UC6aCBD8hLAJzg7V50CEcX3g" target="_blank"
-							class="fa fa-youtube  council-cards-link">&nbsp;</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-12">
-				<div class="council-cards">
-					<img src="./assets/images/council/gensec_1.jpeg">
-					<div class="council-cards-content text-center">
-						<h4 style="font-weight: 500;">
-							Vibhanshu Jain<br>
-							General Secretary 1
-						</h4>
-						<a href="https://www.youtube.com/channel/UC6aCBD8hLAJzg7V50CEcX3g" target="_blank"
-							class="fa fa-youtube  council-cards-link">&nbsp;</a><a
-							href="https://www.youtube.com/channel/UC6aCBD8hLAJzg7V50CEcX3g" target="_blank"
-							class="fa fa-youtube  council-cards-link">&nbsp;</a><a
-							href="https://www.youtube.com/channel/UC6aCBD8hLAJzg7V50CEcX3g" target="_blank"
-							class="fa fa-youtube  council-cards-link">&nbsp;</a><a
-							href="https://www.youtube.com/channel/UC6aCBD8hLAJzg7V50CEcX3g" target="_blank"
-							class="fa fa-youtube  council-cards-link">&nbsp;</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-12">
-				<div class="council-cards">
-					<img src="./assets/images/council/gensec_1.jpeg">
-					<div class="council-cards-content text-center">
-						<h4 style="font-weight: 500;">
-							Vibhanshu Jain<br>
-							General Secretary 1
-						</h4>
-						<a href="https://www.youtube.com/channel/UC6aCBD8hLAJzg7V50CEcX3g" target="_blank"
-							class="fa fa-youtube  council-cards-link">&nbsp;</a><a
-							href="https://www.youtube.com/channel/UC6aCBD8hLAJzg7V50CEcX3g" target="_blank"
-							class="fa fa-youtube  council-cards-link">&nbsp;</a><a
-							href="https://www.youtube.com/channel/UC6aCBD8hLAJzg7V50CEcX3g" target="_blank"
-							class="fa fa-youtube  council-cards-link">&nbsp;</a><a
-							href="https://www.youtube.com/channel/UC6aCBD8hLAJzg7V50CEcX3g" target="_blank"
-							class="fa fa-youtube  council-cards-link">&nbsp;</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-12">
-				<div class="council-cards">
-					<img src="./assets/images/council/gensec_1.jpeg">
-					<div class="council-cards-content text-center">
-						<h4 style="font-weight: 500;">
-							Vibhanshu Jain<br>
-							General Secretary 1
-						</h4>
-						<a href="https://www.youtube.com/channel/UC6aCBD8hLAJzg7V50CEcX3g" target="_blank"
-							class="fa fa-youtube  council-cards-link">&nbsp;</a><a
-							href="https://www.youtube.com/channel/UC6aCBD8hLAJzg7V50CEcX3g" target="_blank"
-							class="fa fa-youtube  council-cards-link">&nbsp;</a><a
-							href="https://www.youtube.com/channel/UC6aCBD8hLAJzg7V50CEcX3g" target="_blank"
-							class="fa fa-youtube  council-cards-link">&nbsp;</a><a
-							href="https://www.youtube.com/channel/UC6aCBD8hLAJzg7V50CEcX3g" target="_blank"
-							class="fa fa-youtube  council-cards-link">&nbsp;</a>
-					</div>
-				</div>
-			</div>
 		</div>
 
 
