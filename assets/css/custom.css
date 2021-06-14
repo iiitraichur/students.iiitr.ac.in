@@ -14,3 +14,35 @@ h5 {
   color: white;
   padding: 10px;
 }
+
+/* cards */
+.council-cards {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 5px 8px 32px 20px rgba(31, 38, 135, 0.37);
+  margin: 5%;
+}
+
+/* .council-cards:hover{
+  background-color: black;
+} */
+
+.council-cards img {
+  width: 50%;
+  margin: 5% 25% 5% 25%;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.council-cards-content {
+  color: black;
+  text-align: center;
+  padding: 10px;
+}
+/* .council-cards-content:hover{ 
+  color: white, !important;
+} */
+.council-cards-link {
+  padding: 15px;
+  font-size: 30px;
+}
