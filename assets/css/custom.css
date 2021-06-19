@@ -17,10 +17,10 @@ h5 {
 
 /* cards */
 .council-cards {
-  background-color: #1D1D27;
+  background-color: #1d1d27;
   border-radius: 10px;
   box-shadow: 5px 8px 32px 20px rgba(31, 38, 135, 0.37);
-  
+
   margin: 5%;
 }
 
@@ -44,9 +44,12 @@ h5 {
 }
 
 .council-cards-content {
-  color: black;
+  color: rgb(255, 255, 255);
   text-align: center;
   padding: 10px;
+}
+.council-cards-content .fa{
+  color: white;
 }
 /* .council-cards-content:hover{ 
   color: white, !important;
@@ -54,4 +57,19 @@ h5 {
 .council-cards-link {
   padding: 15px;
   font-size: 30px;
+}
+
+/*  =============  Scroll Bar ================== */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1D1D27;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #d5eaf8;
 }
