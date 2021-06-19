@@ -468,25 +468,21 @@ layout: default
 			</div>
 
 			<div class="modal-body">
-				<form class="membership-form webform" role="form">
-					<input type="text" class="form-control" name="cf-name" placeholder="Name">
+				<form class="membership-form webform" role="form" method="POST" action="https://backend-iiitr.puppalakoushik.repl.co/contact">
+					<input type="text" class="form-control" name="Name" placeholder="Name">
 
-					<input type="email" class="form-control" name="cf-email" placeholder="Email">
+					<input type="email" class="form-control" name="Email" placeholder="Email">
 
-					<input type="tel" class="form-control" name="cf-phone" placeholder="Phone Number"
+					<input type="tel" class="form-control" name="Phone" placeholder="Phone Number"
 						pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
 
-					<textarea class="form-control" rows="3" name="cf-message" placeholder="Message"></textarea>
+					<input type="text" class="form-control" name="Subject" placeholder="Subject">
+
+					<textarea class="form-control" rows="3" name="Message" placeholder="Message"></textarea>
 
 					<button type="submit" class="form-control" id="submit-button" name="submit">Submit
 						Button</button>
 
-					<div class="custom-control custom-checkbox">
-						<input type="checkbox" class="custom-control-input" id="signup-agree">
-						<label class="custom-control-label text-small text-muted" for="signup-agree">I agree to the
-							<a href="#">Terms &amp;Conditions</a>
-						</label>
-					</div>
 				</form>
 			</div>
 
