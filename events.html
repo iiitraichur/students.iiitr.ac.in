@@ -2,3 +2,74 @@
 title: Events
 layout: default
 ---
+
+<style>
+    .update-section {
+        background-color: #1D1D27;
+    }
+
+    .update-cards {
+        box-shadow: 5px 8px 32px 20px rgba(31, 38, 135, 0.37);
+        margin-bottom: 20px;
+    }
+
+    .update-cards p {
+        height: 80px;
+        overflow-y: hidden;
+    }
+
+    .button1 {
+        background-color: hsl(246, 32%, 51%);
+        color: black;
+    }
+
+    .button1:hover {
+        background-color: #2c2f7f;
+        color: white;
+    }
+
+
+    @media only screen and (min-width: 600px) {
+        .update-cards img {
+            height: 250px;
+        }
+    }
+</style>
+
+<!-- CLASS -->
+<section class="class section update-section" id="class">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-12 col-12 text-center mb-5">
+                <h6 data-aos="fade-up"></h6>
+
+                <h2 style="color: white;" data-aos="fade-up" data-aos-delay="200"><b>Updates</b></h2>
+            </div>
+
+            {% assign count = 0 %}
+
+            {% for post in site.posts %}
+            {% if count == 3 %}
+            {% break %}
+            {% endif %}
+
+            <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400">
+                <div class="class-thumb update-cards">
+                    <img src="/assets/images/updates/{{ post.img_1 }}" class="img-fluid" alt="Class">
+
+                    <div class="class-info">
+                        <h3 style="color:black">{{ post.title }}</h3>
+                        <h5 style="color: rgb(0, 0, 0);">{{ post.date | date: "%d %b %Y" }}</h5>
+                        <!-- <p>{{ post.content }}</p> -->
+                        <a href="{{ post.url | absolute_url }}"><button class="btn button1">More</button></a>
+                    </div>
+                </div>
+            </div>
+
+            {% assign count = count | plus: 1 %}
+            {% endfor %}
+
+        </div>
+    </div>
+</section>
