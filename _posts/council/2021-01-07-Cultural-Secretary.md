@@ -12,5 +12,8 @@ department: Computer Science
 rollno: CS19B1003
 batch: B.Tech 2019-2023
 ---
-I am a student of Bachelor of Technology in Computer Science and Engineering in Indian Institute of Information Technology Raichur, which is under the Indian Institute of Technology Hyderabad.
-
+Cultural Secretary is in charge of conducting cultural and recreational activities on the campus. 
+<br><br>
+<b>Roles</b><br>
+To ensure the participation of the students.
+To conduct inter-college/intra-college events to develop/promote the skills of the students. 
