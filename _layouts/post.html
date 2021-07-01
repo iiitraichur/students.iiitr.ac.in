@@ -50,7 +50,7 @@
                     margin: 10%;
                 }
             </style>
-            <div class="row updates-page-image">
+            <div class="row updates-page-image justify-content-center">
 
                 <div class="col-lg-12">
                     <h2>{{ page.title }}</h2>
@@ -154,10 +154,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h3 style="color:black">
+                    <h3 data-aos="fade-up" data-aos-delay="200" style="color:black">
                         <b>Academics Details</b>
                     </h3>
-                    <h4 style="color:black">
+                    <h4 style="color:black" data-aos="fade-up" data-aos-delay="300">
                         Department: {{page.department}}<br>
                         Batch: {{page.batch}}<br>
                         Roll Number: {{page.rollno }}<br>
@@ -165,7 +165,7 @@
                     </h4>
                     <br>
                     <br>
-                    <h2>
+                    <h2 data-aos="fade-up" data-aos-delay="400">
                         <a href="{{page.linkedin}}" target="_blank" class="fa fa-linkedin">&nbsp;&nbsp;&nbsp;</a>
                         <a href="tel://{{page.number}}" target="_blank" class="fa fa-phone">&nbsp;&nbsp;&nbsp;</a>
                         <a href="mailto:{{page.email}}" target="_blank" class="fa fa-envelope">&nbsp;&nbsp;&nbsp;</a>

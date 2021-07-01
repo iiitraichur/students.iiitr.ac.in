@@ -1,6 +1,6 @@
 ---
  layout: post	
- title: Sunshine Session
+ title: Aurora Session
  img_1: 01-27-2021/sun_1.jpg
  img_2: 01-27-2021/sun_2.jpg
  img_3: 01-27-2021/sun_3.jpg

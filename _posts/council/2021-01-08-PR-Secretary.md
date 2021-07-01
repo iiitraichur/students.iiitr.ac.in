@@ -5,7 +5,7 @@ name: Leela Madhuri
 designation: PR Secretary
 image: leela.webp
 linkedin : #
-number: 
+number: 7396853676
 email: media@iiitr.ac.in
 suggestion_form: https://forms.gle/7T8tb5hoJ7M1mAEf8
 department: Computer Science
