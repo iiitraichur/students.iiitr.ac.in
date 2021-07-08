@@ -21,3 +21,5 @@ fields:
 - type: file
   name: img_4
   label: img_4
+pages:
+- _posts/2021-07-01-Doctors-Day.md
