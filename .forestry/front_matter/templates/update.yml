@@ -1,0 +1,22 @@
+---
+label: Update
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: title
+  label: title
+- type: file
+  name: img_1
+  label: img_1
+- type: file
+  name: img_2
+  label: img_2
+- type: file
+  name: img_3
+  label: img_3
+- type: file
+  name: img_4
+  label: img_4
