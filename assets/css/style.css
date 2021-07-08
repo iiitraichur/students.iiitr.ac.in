@@ -585,12 +585,18 @@ https://www.tooplate.com/view/2119-gymso-fitness
     font-size: var(--base-font-size);
   }
 
-  .contact .fa,
-  .site-footer .fa {
+  .contact .fa
+  {
     color: var(--primary-color);
   }
 
-
+  .footer-transition:hover {
+    font-size: 120%;
+  }
+  .copyright-text .footer-transition:hover {
+    text-decoration: underline;
+  }
+  
   /*---------------------------------------
      SOCIAL ICON              
   -----------------------------------------*/
