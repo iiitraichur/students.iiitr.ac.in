@@ -6,8 +6,9 @@ fields:
   name: layout
   label: layout
 - type: text
-  name: title
+  name: Doctors_day
   label: title
+  description: Doctor's Day
 - type: file
   name: img_1
   label: img_1
