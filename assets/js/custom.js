@@ -53,7 +53,7 @@ const Message = document.getElementById('Message')
 
 const Post = () => {
 	axios
-		.post('http://localhost:3001/contact', {
+		.post('https://backend-iiitr.puppalakoushik.repl.co/contact', {
 			Name: `${Name.value}`,
 			Email: `${Email.value}`,
 			Phone: `${Phone.value}`,
