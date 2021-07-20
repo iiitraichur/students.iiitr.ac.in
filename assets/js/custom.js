@@ -34,13 +34,12 @@ const createUser = (user) => {
 	axios
 		.post('https://backend-iiitr.puppalakoushik.repl.co/contact', user)
 		.then((response) => {
-			const addedUser = response.data
-			appendToDOM([addedUser])
+			console.log(response)
 		})
 		.catch((error) => console.error(error))
 }
 
-const form = document.querySelector('form')
+const form = document.getElementById('submit-button')
 
 const formEvent = form.addEventListener('submit', (event) => {
 	event.preventDefault()
