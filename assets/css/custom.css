@@ -1,35 +1,40 @@
-/* ========== Footer CSS ============= */
+/**
+ * /* ========== Footer CSS =============
+ *
+ * @format
+ */
+
 .site-footer {
-  text-align: center;
+	text-align: center;
 }
 
 .footer-logo {
-  width: 50%;
-  margin: 0% 25% 0% 25%;
+	width: 50%;
+	margin: 0% 25% 0% 25%;
 }
 
 .site-footer a,
 h3,
 h5 {
-  color: white;
-  padding: 10px;
+	color: white;
+	padding: 10px;
 }
 
 /* cards */
 .council-cards {
-  background-color: #1d1d27;
-  border-radius: 10px;
-  box-shadow: 5px 8px 32px 20px rgba(31, 38, 135, 0.37);
+	background-color: #1d1d27;
+	border-radius: 10px;
+	box-shadow: 5px 8px 32px 20px rgba(31, 38, 135, 0.37);
 
-  margin: 5%;
+	margin: 5%;
 }
 
 .council-cards:hover {
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
-  animation-duration: 5s;
-  animation-delay: 5s;
-  box-shadow: 0 4px 8px 0 rgb(85, 88, 230), 0 6px 20px 0 #9496ff;
+	-webkit-transform: scale(1.05);
+	transform: scale(1.05);
+	animation-duration: 5s;
+	animation-delay: 5s;
+	box-shadow: 0 4px 8px 0 rgb(85, 88, 230), 0 6px 20px 0 #9496ff;
 }
 
 /* .council-cards:hover{
@@ -37,48 +42,57 @@ h5 {
 } */
 
 .council-cards img {
-  width: 50%;
-  margin: 5% 25% 5% 25%;
-  border-radius: 50%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	width: 50%;
+	margin: 5% 25% 5% 25%;
+	border-radius: 50%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .council-cards-content {
-  color: rgb(255, 255, 255);
-  text-align: center;
-  padding: 10px;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	padding: 10px;
 }
-.council-cards-content .fa{
-  color: white;
+.council-cards-content .fa {
+	color: white;
 }
 
 .fa {
-  color: white;
+	color: white;
 }
 
 .fa:hover {
-  color: red;
+	color: red;
 }
 
 /* .council-cards-content:hover{ 
   color: white, !important;
 } */
 .council-cards-link {
-  padding: 15px;
-  font-size: 30px;
+	padding: 15px;
+	font-size: 30px;
 }
 
 /*  =============  Scroll Bar ================== */
 ::-webkit-scrollbar {
-  width: 7px;
+	width: 7px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #1D1D27;
+	background: #1d1d27;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #d5eaf8;
+	background: #d5eaf8;
+}
+
+.error input,
+.error textarea {
+	border-color: #e74c3c;
+}
+
+small {
+	color: #e74c3c;
 }

@@ -30,26 +30,98 @@ $(function () {
 	})
 })
 
-const createUser = (user) => {
-	axios
-		.post('https://backend-iiitr.puppalakoushik.repl.co/contact', user)
-		.then((response) => {
-			console.log(response)
-		})
-		.catch((error) => console.error(error))
-}
-
-const form = document.getElementById('submit-button')
+const form = document.getElementById('form')
 
 const formEvent = form.addEventListener('submit', (event) => {
 	event.preventDefault()
 
-	const Name = document.getElementById('Name').value
-	const Email = document.getElementById('Email').value
-	const Phone = document.getElementById('Phone').value
-	const Subject = document.getElementById('Subject').value
-	const Message = document.getElementById('Message').value
-
-	const user = { Name, Email, Phone, Subject, Message }
-	createUser(user)
+	if (Check()) {
+		alert('There are Some errors check the form')
+	} else {
+		alert('Your Form Submitted Successfully')
+		document.getElementById('contact-form').setAttribute('hidden', 'hidden')
+		document.getElementById('submitted-form').removeAttribute('hidden')
+	}
+	Post()
 })
+
+const Name = document.getElementById('Name')
+const Email = document.getElementById('Email')
+const Phone = document.getElementById('Phone')
+const Subject = document.getElementById('Subject')
+const Message = document.getElementById('Message')
+
+const Post = () => {
+	axios
+		.post('http://localhost:3001/contact', {
+			Name: `${Name.value}`,
+			Email: `${Email.value}`,
+			Phone: `${Phone.value}`,
+			Subject: `${Subject.value}`,
+			Message: `${Message.value}`,
+		})
+		.then((response) => {
+			console.log(response)
+		})
+		.catch((error) => console.error(error, error.response))
+}
+
+function SetError(input, message) {
+	const formControl = input.parentElement
+	const small = formControl.querySelector('small')
+	formControl.classList.add('error')
+	small.removeAttribute('hidden')
+	small.innerText = message
+}
+
+function SetSuccess(input) {
+	const formControl = input.parentElement
+	const small = formControl.querySelector('small')
+	formControl.classList.remove('error')
+	small.setAttribute('hidden', 'hidden')
+}
+
+function isEmail(email) {
+	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+		email
+	)
+}
+
+const Check = () => {
+	let error
+	if (Name.value.trim() === '') {
+		SetError(Name, 'Name cannot be blank')
+		error = true
+	} else {
+		SetSuccess(Name)
+	}
+	if (Email.value.trim() === '') {
+		SetError(Email, 'Name cannot be blank')
+		error = true
+	} else if (!isEmail(Email.value.trim())) {
+		SetError(Email, 'Not a valid email')
+		error = true
+	} else {
+		SetSuccess(Email)
+	}
+	if (Phone.value.trim() === '') {
+		SetError(Phone, 'Name Number cannot be blank')
+		error = true
+	} else {
+		SetSuccess(Phone)
+	}
+	if (Subject.value.trim() === '') {
+		SetError(Subject, 'Subject cannot be blank')
+		error = true
+	} else {
+		SetSuccess(Subject)
+	}
+	if (Message.value.trim() === '') {
+		SetError(Message, 'Message cannot be blank')
+		error = true
+	} else {
+		SetSuccess(Message)
+	}
+
+	return error
+}
