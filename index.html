@@ -441,22 +441,37 @@ layout: default
 			</div>
 
 			<div class="modal-body">
-				<form class="membership-form webform" role="form" method="POST"
-					action="https://backend-iiitr.puppalakoushik.repl.co/contact">
-					<input type="text" class="form-control" name="Name" placeholder="Name">
-
-					<input type="email" class="form-control" name="Email" placeholder="Email">
-
-					<input type="number" class="form-control" name="Phone" placeholder="Phone Number">
-
-					<input type="text" class="form-control" name="Subject" placeholder="Subject">
-
-					<textarea class="form-control" rows="3" name="Message" placeholder="Message"></textarea>
-
-					<button type="submit" class="form-control" id="submit-button" name="submit">Submit
-						Button</button>
-
-				</form>
+				<div id='contact-form'>
+					<form class="membership-form webform" role="form" id="form">
+						<div>
+							<input type="text" id="Name" class="form-control" name="Name" placeholder="Name">
+							<small hidden>Error message</small>
+						</div>
+						<div>
+							<input type="email" id="Email" class="form-control" name="Email" placeholder="Email">
+							<small hidden>Error message</small>
+						</div>
+						<div>
+							<input type="number" id="Phone" class="form-control" name="Phone"
+								placeholder="Phone Number">
+							<small hidden>Error message</small>
+						</div>
+						<div>
+							<input type="text" id="Subject" class="form-control" name="Subject" placeholder="Subject">
+							<small hidden>Error message</small>
+						</div>
+						<div>
+							<textarea id="Message" class="form-control" rows="4" name="Message"
+								placeholder="Message"></textarea>
+							<small hidden>Error message</small>
+						</div>
+						<button type="submit" class="form-control" id="submit-button" name="submit">Submit
+							Button</button>
+					</form>
+				</div>
+				<div id='submitted-form' hidden>
+					<h5 style='color:red'>You have successfully submitted form.</h5>
+				</div>
 			</div>
 
 			<div class="modal-footer"></div>
