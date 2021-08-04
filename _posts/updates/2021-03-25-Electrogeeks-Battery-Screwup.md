@@ -1,6 +1,7 @@
 ---
  layout: post	
  title: Battery Screw Up
+ categories: updates
  img_1: 25-03-2021/1.webp
 ---
 

@@ -1,6 +1,7 @@
 ---
  layout: post	
  title: Technovation 2021
+ categories: updates
  img_1: 11-05-2021/1.webp
 ---
 

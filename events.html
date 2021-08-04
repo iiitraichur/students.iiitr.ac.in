@@ -13,6 +13,10 @@ layout: default
         margin-bottom: 20px;
     }
 
+    .update-cards img {
+        width: 100%;
+    }
+
     .update-cards p {
         height: 80px;
         overflow-y: hidden;
@@ -47,12 +51,9 @@ layout: default
                 <h2 style="color: white;" data-aos="fade-up" data-aos-delay="200"><b>Events</b></h2>
             </div>
 
-            {% assign count = 0 %}
-
-            {% for post in site.posts %}
-            {% if count == 3 %}
-            {% break %}
-            {% endif %}
+            {% assign update = site.categories['updates'] %}
+            {% for post in update %}
+            
 
             <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400">
                 <div class="class-thumb update-cards">
@@ -67,7 +68,6 @@ layout: default
                 </div>
             </div>
 
-            {% assign count = count | plus: 1 %}
             {% endfor %}
 
         </div>
