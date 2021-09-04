@@ -1,6 +1,6 @@
 ---
 layout: post
-category: council
+category: council-2020
 name: Manav Chaudhary
 designation: Finesse Coordinator
 image: 

@@ -1,6 +1,6 @@
 ---
 layout: post
-category: council
+category: council-2019
 name: Deepak Sai Perisetla
 designation: General Secretary 1
 image:

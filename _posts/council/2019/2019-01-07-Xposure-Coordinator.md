@@ -1,6 +1,6 @@
 ---
 layout: post
-category: council
+category: council-2019
 name: Siddharth Saini
 designation: Xposure Coordinator
 image:

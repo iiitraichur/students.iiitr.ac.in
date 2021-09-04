@@ -1,6 +1,6 @@
 ---
 layout: post
-category: council
+category: council-2020
 name: Ananya Mantravadi
 designation: General Secretary 2
 image: gensec_2.jpg

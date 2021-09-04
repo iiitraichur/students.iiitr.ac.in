@@ -1,7 +1,7 @@
 ---
 layout: post
 category: council
-name: Uday Reddy
+name: Uday Reddy-2019
 designation: NSO Coordinator
 image:
 linkedin:

@@ -1,6 +1,6 @@
 ---
 layout: post
-category: council
+category: council-2020
 name: Vibhanshu Jain
 designation: Electrogeeks Coordinator
 image: gensec_1.jpeg

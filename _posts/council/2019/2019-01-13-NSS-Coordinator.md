@@ -1,6 +1,6 @@
 ---
 layout: post
-category: council
+category: council-2019
 name: Rohith Dosawada
 designation: NSS Coordinator
 image:
