@@ -3,7 +3,7 @@ layout: post
 category: council-2019
 name: Uday Reddy-2019
 designation: NSO Coordinator
-image: uday reddy.jpg
+image: uday-reddy.jpg
 linkedin:
 department: Computer Science
 rollno: CS19B1010
