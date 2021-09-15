@@ -183,7 +183,7 @@ layout: default
 
 <!-- Contact cards  -->
 
-<section class="class section update-section" id = "StudentCouncil">
+<section class="class section update-section" id="StudentCouncil">
 	<div class="container">
 		<div class="row justify-content-center">
 
@@ -195,6 +195,8 @@ layout: default
 
 			{% assign council = site.categories['council'] %}
 			{% for post in council %}
+
+			{% if post.session == NULL %}
 			<div class="col-lg-4 col-12" data-aos="fade-up" data-aos-delay="400">
 				<div class="council-cards">
 					<img src="./assets/images/council/{{ post.image }}">
@@ -213,20 +215,15 @@ layout: default
 					</div>
 				</div>
 			</div>
-			<!-- <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="400">
-				<div class="class-thumb update-cards">
-					<img src="/assets/images/updates/{{ post.img_1 }}" class="img-fluid" alt="Class">
 
-					<div class="class-info">
-						<h3 style="color:black">{{ post.title }}</h3>
-						<h5 style="color: rgb(0, 0, 0);">{{ post.date | date: "%d %b %Y" }}</h5>
-						 <p>{{ post.content }}</p> 
-						<a href="{{ post.url | absolute_url }}"><button class="btn button1">More</button></a>
-					</div>
-				</div>
-			</div> -->
+			{% endif %}
 
 			{% endfor %}
+
+			<div class="col-lg-12 text-center" data-aos="fade-up" data-aos-delay="480">
+				<br><br><br>
+				<a href="{{ post.url | absolute_url }}/past-team.html"><button class="btn button1">Previous Team</button></a>
+			</div>
 		</div>
 
 

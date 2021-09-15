@@ -1,0 +1,105 @@
+---
+title: Previous Team
+layout: default
+---
+
+<style>
+	/* The page CSS will come here */
+	.button1 {
+		background-color: hsl(246, 32%, 51%);
+		color: black;
+	}
+
+	.button1:hover {
+		background-color: #2c2f7f;
+		color: white;
+	}
+</style>
+
+<!-- Contact cards  -->
+
+<section class="class section update-section" id="StudentCouncil">
+	<div class="container">
+		<div class="row justify-content-center">
+
+
+
+
+			<div class="col-lg-12 col-12 text-center mb-5">
+				<h2 data-aos="fade-up" data-aos-delay="200"><b>2020-2021 Council</b></h2>
+			</div>
+
+			{% assign council = site.categories['council-2020'] %}
+			{% for post in council %}
+
+			{% if post.session != NULL %}
+			<div class="col-lg-4 col-12" data-aos="fade-up" data-aos-delay="400">
+				<div class="council-cards">
+					{% if post.image != NULL %}
+					<img src="./assets/images/council/{{ post.image }}">
+					{% endif %}
+					<div class="council-cards-content text-center">
+						<h4 style="font-weight: 500;">
+							{{post.name}}<br>
+						</h4>
+						<h5>
+							{{post.designation}}<br>
+							Session {{post.session}}
+						</h5>
+						<a href="{{post.linkedin}}" target="_blank"
+							class="fa fa-linkedin  council-cards-link">&nbsp;</a>
+						<a href="mailto:{{post.email}}" target="_blank"
+							class="fa fa-envelope  council-cards-link">&nbsp;</a><br>
+						<a href="{{ post.url | absolute_url }}"><button class="btn button1">More</button></a>
+						<br><br>
+					</div>
+				</div>
+			</div>
+
+			{% endif %}
+
+			{% endfor %}
+
+
+
+
+			<div class="col-lg-12 col-12 text-center mb-5">
+				<h2 data-aos="fade-up" data-aos-delay="200"><b><br><br>2019-2020 Council</b></h2>
+			</div>
+
+			{% assign council = site.categories['council-2019'] %}
+			{% for post in council %}
+
+			{% if post.session != NULL %}
+			<div class="col-lg-4 col-12" data-aos="fade-up" data-aos-delay="400">
+				<div class="council-cards">
+					{% if post.image != NULL %}
+					<img src="./assets/images/council/{{ post.image }}">
+					{% endif %}
+					<div class="council-cards-content text-center">
+						<h4 style="font-weight: 500;">
+							{{post.name}}<br>
+						</h4>
+						<h5>
+							{{post.designation}}<br>
+							Session {{post.session}}
+						</h5>
+						<a href="{{post.linkedin}}" target="_blank"
+							class="fa fa-linkedin  council-cards-link">&nbsp;</a>
+						<a href="mailto:{{post.email}}" target="_blank"
+							class="fa fa-envelope  council-cards-link">&nbsp;</a><br>
+						<a href="{{ post.url | absolute_url }}"><button class="btn button1">More</button></a>
+						<br><br>
+					</div>
+				</div>
+			</div>
+
+			{% endif %}
+
+			{% endfor %}
+		</div>
+
+
+	</div>
+	</div>
+</section>

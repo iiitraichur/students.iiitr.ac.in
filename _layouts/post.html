@@ -53,7 +53,15 @@
             <div class="row updates-page-image justify-content-center">
 
                 <div class="col-lg-12">
-                    <h2>{{ page.title }}</h2>
+
+                    <h2>
+                        {% if page.session != NULL %}
+                        {{page.session}}<br>
+                        {% endif %}
+                        {{ page.title }}
+                    </h2>
+
+
                     {% if page.designation != NULL %}
                     <div class="row" style="padding-top:30px">
                         <div class="col-lg-6">
@@ -63,6 +71,15 @@
                         <div class="col-lg-6">
                             <div class="coucil-cards-content-page">
                                 <h4><b><br>{{ page.name }}</b></h4>
+                                {% if page.session != NULL %}
+                                <br>
+                                <h4 style="color:black" data-aos="fade-up" data-aos-delay="300">
+                                    Department: {{page.department}}<br>
+                                    Batch: {{page.batch}}<br>
+                                    Roll Number: {{page.rollno }}<br>
+
+                                </h4>
+                                {% endif %}
                                 {{page.content}}
                             </div>
                         </div>
@@ -110,6 +127,8 @@
     </section>
 
     {% if page.designation != null %}
+
+    {% if page.session == null %}
     <section class="feature" id="feature">
         <div class="container">
             <div class="row">
@@ -174,6 +193,8 @@
             </div>
         </div>
     </section>
+
+    {% endif %}
     {% endif %}
 
     {% include footer.html %}
