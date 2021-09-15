@@ -3,7 +3,7 @@ layout: post
 category: council-2020
 name: Aditya Agrawal
 designation: Cultural Secretary
-image:
+image: cult.webp
 linkedin:
 department: Computer Science
 rollno: CS19B1003

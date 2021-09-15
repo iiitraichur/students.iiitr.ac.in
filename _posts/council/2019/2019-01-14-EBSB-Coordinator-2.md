@@ -3,7 +3,7 @@ layout: post
 category: council-2019
 name: Reethu Sanagala
 designation: EBSB Coordinator
-image:
+image: reethu.jpeg
 linkedin:
 department: Computer Science
 rollno: CS19B1023

@@ -3,7 +3,7 @@ layout: post
 category: council-2020
 name: Rohith Dosawada
 designation: NSS Coordinator
-image:
+image: rohith.jpeg
 linkedin:
 department: Computer Science
 rollno: CS19B1008

@@ -3,7 +3,7 @@ layout: post
 category: council-2019
 name: Aditya Agrawal
 designation: Electrogeeks Coordinator
-image:
+image: cult.webp
 linkedin:
 department: Computer Science
 rollno: CS19B1003

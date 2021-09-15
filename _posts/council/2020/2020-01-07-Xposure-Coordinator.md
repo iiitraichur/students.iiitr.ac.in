@@ -3,7 +3,7 @@ layout: post
 category: council-2020
 name: Kaustubh Kesharwani
 designation: Xposure Coordinator
-image:
+image: kaustubh.jpg
 linkedin:
 department: Computer Science
 rollno: CS19B1015

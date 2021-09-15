@@ -3,7 +3,7 @@ layout: post
 category: council-2019
 name: Kushagra Indurkhya
 designation: Codesoc Coordinator
-image:
+image: kushagra.webp
 linkedin:
 department: Computer Science
 rollno: CS19B1017

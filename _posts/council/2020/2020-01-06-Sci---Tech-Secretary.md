@@ -1,9 +1,9 @@
 ---
 layout: post
 category: council-2020
-name: Kushagra Kesharwani
+name: Kushagra Indurkhya
 designation: Sci-Tech Secretary
-image:
+image: kushagra.webp
 linkedin:
 department: Computer Science
 rollno: CS19B1015

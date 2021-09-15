@@ -3,7 +3,7 @@ layout: post
 category: council-2019
 name: Manav Chaudhary
 designation: EBSB Coordinator
-image:
+image: manav.jpeg
 linkedin:
 department: Computer Science
 rollno: CS19B1018

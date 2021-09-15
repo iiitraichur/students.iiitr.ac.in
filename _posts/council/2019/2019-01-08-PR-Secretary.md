@@ -3,7 +3,7 @@ layout: post
 category: council-2019
 name: Gowtham Kancharla
 designation: PR Secretary
-image:
+image: media.webp
 linkedin:
 department: Computer Science
 rollno: CS19B1014

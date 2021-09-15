@@ -3,8 +3,8 @@ layout: post
 category: council-2019
 name: Manav Chaudhary
 designation: Finesse Coordinator
-image: 
-linkedin: 
+image: manav.jpeg
+linkedin:
 department: Computer Science
 rollno: CS19B1018
 batch: B.Tech 2019-2023

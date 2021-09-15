@@ -3,7 +3,7 @@ layout: post
 category: council-2020
 name: Siddharth Saini
 designation: General Secretary
-image:
+image: siddharth.jpeg
 linkedin:
 department: Computer Science
 rollno: CS19B1024
