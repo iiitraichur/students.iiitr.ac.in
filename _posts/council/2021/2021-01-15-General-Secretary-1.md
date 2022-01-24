@@ -2,7 +2,7 @@
 layout: post
 category: council
 name: Vibhanshu Jain
-designation: General Secretary 1
+designation: General Secretary 1 
 image: gensec_1.jpeg
 linkedin : https://www.linkedin.com/in/vibhanshu-jain-iiitr/
 number: 9680017462

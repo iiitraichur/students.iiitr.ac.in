@@ -3,7 +3,7 @@ layout: post
 category: council
 name: Leela Madhuri
 designation: PR Secretary
-image: leela.webp
+image: cs20b1012.png
 linkedin : #
 number: 7396853676
 email: media@iiitr.ac.in
@@ -12,7 +12,7 @@ department: Computer Science
 rollno: 
 batch: B.Tech 2020-2024
 ---
-The Pr Secretary is the face of the institute. PR Secretary is responsible for representing the institute on social platforms. 
+The PR Secretary is the face of the institute. PR Secretary is responsible for representing the institute on social platforms. 
 <br><br>
 <b>Roles</b>
 <br>
